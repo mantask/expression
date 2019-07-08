@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'io.freefair.lombok' version '3.2.1'
+}
+
+group 'lt.kanaporis'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor 'org.projectlombok:lombok'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.hamcrest:hamcrest-library:1.3'
+}
